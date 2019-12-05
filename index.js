@@ -4,6 +4,7 @@ const path = require("path");
 let app = express();
 app.set('view engine','ejs');
 //appID
+app.use(express.static('./dist'))
 let appID = `wx76a5baaa4accdcea`;
 //appsecret
 let appSerect = `10a9328442deaf44e2acbfe165f5faab`;
